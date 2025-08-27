@@ -1,11 +1,11 @@
 // C++ program for implementation of Insertion Sort
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 /* Function to sort array using insertion sort */
 void insertionSort(int arr[], int n)
 {
-    for (int i = 1; i < n; ++i) {
+    for (int i = 1; i < n; i++) {
         int key = arr[i];
         int j = i - 1;
 
@@ -31,7 +31,7 @@ void printArray(int arr[], int n)
 // Driver method
 int main()
 {
-    int arr[] = { 12, 11, 13, 5, 6 };
+    int arr[] = {13,46,24,52,20,9};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     insertionSort(arr, n);
@@ -39,5 +39,3 @@ int main()
 
     return 0;
 }
-
-/* This code is contributed by Hritik Shah. */
